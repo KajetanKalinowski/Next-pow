@@ -1,7 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     images:{
-        domains:[]
+        domains:[
+            "flagcdn.com",
+            "upload.wikimedia.org"
+        ]
     }
 };
 
