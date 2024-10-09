@@ -22,7 +22,7 @@ export default function Info({params}){
         <div className="h-screen w-full flex flex-col flex-wrap items-center justify-center">
             {load ? (<h1>Pobieranie danych...</h1>):(
                 <div className="border-2 border-black p-5 bg-slate-200">
-                <div className="relative w-[600px] h-[400px] border-2 border-black">
+                <div className="relative w-[600px] h-[400px] border-2 border-black flex flex-col items-centers">
                 <Image src={kraj[0].flags.png} alt={kraj[0].name.common} layout="fill" objectFit="contain"/>
                 </div>
                 <h1 className="font-semibold text-center">{kraj[0].name.common}</h1>
