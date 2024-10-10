@@ -2,11 +2,10 @@
 import { useEffect,useState } from "react"
 import Image from "next/image"
 import Border from "@/components/borders"
-import Country from "@/components/country"
 import Link from "next/link"
 export default function Info({params}){
     const [kraj,setKraj] = useState([])
-    const [load,setLoad] = useState(true)
+    const [load,setLoad] = useState(true)   
     useEffect(()=>{
         const getData = async()=>{
             try{

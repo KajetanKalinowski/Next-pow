@@ -1,5 +1,4 @@
 import { useState,useEffect } from "react"
-import Link from "next/link"
 import Image from "next/image"
 export default function Border({code}){
     const [border,setBorder] = useState([])
@@ -19,6 +18,7 @@ export default function Border({code}){
         getData()
     },[])
     return(
+        
         <div>
             {load ? (<h1>Ładowanie</h1>):(
                 <div className="w-[200px]">
